@@ -1,0 +1,7 @@
+<div *ngIf="ehValorInvalido() && ehCampoModificado()">
+    <div *ngIf="ehErro('required')" class="error-message">{{ nomeCampo() }} é obrigatório(a).</div>
+    <div *ngIf="ehErro('minlength')" class="error-message">{{ nomeCampo() }} deve ter pelo menos {{ parametro?.minlength }} caracteres.</div>
+    <div *ngIf="ehErro('maxlength')" class="error-message">{{ nomeCampo() }} não pode ter mais de {{ parametro?.maxlength }} caracteres.</div>
+    <div *ngIf="ehErro('email')" class="error-message">Formato de {{ campo }} inválido.</div>
+</div>
+<div *ngIf="campo === 'confirmarSenha' && ehErroConfirmacaoSenha('senhasNaoCoincidem')" class="error-message">As senhas não coincidem.</div>

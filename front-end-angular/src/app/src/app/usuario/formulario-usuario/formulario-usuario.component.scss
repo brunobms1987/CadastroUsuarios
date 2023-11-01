@@ -1,0 +1,55 @@
+@import '~font-awesome/css/font-awesome.min.css';
+
+.form-group {
+    margin-bottom: 10px;
+  }
+  
+  .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group {
+    flex: 200;
+    margin-right: 20px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input .password-input-field {
+    padding-right: 0px;
+  }
+  
+  .password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-input .toggle-password i {
+    font-size: 18px;
+  }
+  
+  /* Ícone de olho visível */
+  .fa-eye {
+    color: #888;
+  }
+  
+  /* Ícone de olho oculto */
+  .fa-eye-slash {
+    color: #333;
+  }
+  
